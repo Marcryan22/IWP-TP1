@@ -1,3 +1,4 @@
+<!-- WILL REFRESH THE PAGE EVERY 10 SECONDS -->
 <?php
 	if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'on') {
 		$url = "https://";
@@ -11,10 +12,12 @@
 	$page = $url;
 	$sec = "10"
 ?>
+<!-- WILL REFRESH THE PAGE EVERY 10 SECONDS -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- REFRESHER SCRIPT ENABLER -->
 	<meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
